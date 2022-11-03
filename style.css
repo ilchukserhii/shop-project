@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     background-image: url(img/patt.png);
 }
 
@@ -23,6 +23,7 @@ body {
 
 .row {
     display: flex;
+    align-items: center;
     margin-left: -15px;
     margin-right: -15px;
 }
@@ -35,11 +36,31 @@ body {
 .col-3 {
     flex: 0 0 25%;
     max-width: 25%;
+    display: flex;
+    align-items: center;
 }
 
 .col-6 {
     flex: 0 0 50%;
     max-width: 50%;
+}
+
+.col9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.col12 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.col-12 {
+    padding-right: 0;
+}
+
+.logo {
+    padding-top: 7px;
 }
 
 .menu {
@@ -64,4 +85,58 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.search {
+    border: 1px solid #2C71B8;
+    padding: 4px;
+    display: flex;
+}
+
+.search input {
+    width: calc(100% - 30px);
+    height: 30px;
+    border: 0;
+    background: transparent;
+    outline: none;
+}
+
+input::placeholder {
+    font-family: "Roboto", sans-serif;
+    color: #2C71B8;
+    font-size: 21px;
+
+}
+
+.search-submit {
+    width: 30px;
+    height: 30px;
+    background: url(img/search-icon.png) no-repeat center #2C71B8;
+    border: 0;
+}
+
+.cart {
+    display: inline-block;
+    position: relative;
+}
+
+.cart-button {
+    width: 40px;
+    height: 40px;
+    background: url(img/cart.png) no-repeat center #ffffff;
+    border: 0;
+}
+
+.quantity {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #2C71B8;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    font-size: 12px;
 }
