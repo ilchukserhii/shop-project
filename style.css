@@ -36,8 +36,6 @@ body {
 .col-3 {
     flex: 0 0 25%;
     max-width: 25%;
-    display: flex;
-    align-items: center;
 }
 
 .col-6 {
@@ -45,18 +43,21 @@ body {
     max-width: 50%;
 }
 
-.col9 {
+.col-9 {
     flex: 0 0 75%;
     max-width: 75%;
-}
-
-.col12 {
-    flex: 0 0 25%;
-    max-width: 25%;
+    padding-right: 0;
 }
 
 .col-12 {
     padding-right: 0;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
 }
 
 .logo {
