@@ -46,11 +46,6 @@ body {
 .col-9 {
     flex: 0 0 75%;
     max-width: 75%;
-    padding-right: 0;
-}
-
-.col-12 {
-    padding-right: 0;
 }
 
 .d-flex {
@@ -66,9 +61,10 @@ body {
 
 .menu {
     display: flex;
+    position: relative;
 }
 
-.menu li {
+.menu>li {
     width: 25%;
     border-left: 1px solid #2c71b8;
 }
@@ -86,6 +82,41 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.menu>li>a:hover {
+    background-color: #2C71B8;
+    color: white;
+}
+
+.menu>li:nth-child(2)>a:hover {
+    background-image: url(img/menu-arrow.png);
+    background-repeat: no-repeat;
+    background-position: 120px 24px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 143px;
+    width: 286px;
+    background-color: #2C71B8;
+}
+
+.submenu a {
+    color: white;
+    justify-content: left;
+    padding-left: 29px;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.submenu>li>a:hover {
+    background-color: white;
+    color: #2C71B8;
 }
 
 .search {
@@ -134,10 +165,197 @@ input::placeholder {
     left: -10px;
     width: 20px;
     height: 20px;
-    border-radius: 10px;
+    border-radius: 50%;
     background-color: #2C71B8;
     text-align: center;
     line-height: 20px;
     color: white;
     font-size: 12px;
+}
+
+.slider {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 50px;
+}
+
+.main {
+    border-top: 2px solid white;
+}
+
+.col {
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.filters {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.breadcrumbs {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 27px;
+}
+
+.breadcrumbs li+li:before {
+    padding: 8px;
+    color: white;
+    content: "\003e";
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+}
+
+.breadcrumbs li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.header-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.sortby {
+    height: 40px;
+    width: 270px;
+    background-color: #2C71B8;
+    border: 1px solid white;
+    color: white;
+    font-size: 21px;
+    outline: none;
+    padding: 8px 10px 7px 12px;
+}
+
+.itemlist {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.item {
+    width: 270px;
+    height: 652px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(44, 114, 184, 0.758);
+}
+
+.itemimg {
+    border-bottom: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.759);
+    height: 178px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgbuttons {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    top: 10px;
+    right: 10px;
+}
+
+.img-button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #548CC5;
+    color: #2C71B8;
+}
+
+.upscale {
+    background: url(img/upscale-img.png) no-repeat center;
+}
+
+.wishlist {
+    background: url(img/wishlist-img.png) no-repeat center;
+}
+
+.item-description {
+    padding-left: 15px;
+    color: white;
+}
+
+.description-headline {
+    font-size: 31px;
+    font-weight: bold;
+    margin-top: 14px;
+    margin-bottom: 18px;
+}
+
+.description {
+    font-size: 21px;
+    line-height: 21px;
+    text-align: left;
+}
+
+.features {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.keys {
+    line-height: 40px;
+}
+
+.item-price {
+    align-self: center;
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    padding: 25px 0;
+}
+
+sup {
+    font-size: 24px;
+    vertical-align: super;
+}
+
+.item-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.item-button {
+    height: 50px;
+    width: 210px;
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid white;
+    color: white;
+}
+
+.details {
+    background-color: #2C71B8;
+}
+
+.tocart {
+    background-color: rgba(82, 135, 189, 0.553);
+    background: url(img/add-to-cart.png) no-repeat 180px;
 }
