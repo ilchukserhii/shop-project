@@ -67,8 +67,70 @@
         <div class="container">
             <div class="col">
                 <div class="col-3">
-                    <aside class="filters">
-                        Filters
+                    <aside class="filters-block">
+                        <form action="#" class="filter">
+                            <fieldset class="devices-type">
+                                <legend>Device type</legend>
+                                <div class="checkbox-container">
+                                    <input type="checkbox" name="laptop" id="laptop" class="filter-checkbox">
+                                    <label for="laptop">Laptop</label>
+                                </div>
+                                <div class="checkbox-container">
+                                    <input type="checkbox" name="tablet" id="tablet" class="filter-checkbox">
+                                    <label for="tablet">Tablet</label>
+                                </div>
+                            </fieldset>
+                            <fieldset class="color-type">
+                                <legend>Color</legend>
+                                <div class="checkbox-container">
+                                    <input type="checkbox" name="black" id="black" class="filter-checkbox">
+                                    <label for="black">Black</label>
+                                </div>
+                                <div class="checkbox-container">
+                                    <input type="checkbox" name="red" id="red" class="filter-checkbox">
+                                    <label for="red">Red</label>
+                                </div>
+                                <div class="checkbox-container">
+                                    <input type="checkbox" name="green" id="green" class="filter-checkbox">
+                                    <label for="green">Green</label>
+                                </div>
+                                <div class="checkbox-container">
+                                    <input type="checkbox" name="blue" id="blue" class="filter-checkbox">
+                                    <label for="blue">Blue</label>
+                                </div>
+                                <div class="checkbox-container">
+                                    <input type="checkbox" name="orange" id="orange" class="filter-checkbox">
+                                    <label for="orange">Orange</label>
+                                </div>
+                            </fieldset>
+                            <fieldset class="ram-type">
+                                <legend>ram</legend>
+                                <div class="checkbox-container">
+                                    <input type="checkbox" name="onegb" id="onegb" class="filter-checkbox">
+                                    <label for="onegb">1GB</label>
+                                </div>
+                                <div class="checkbox-container">
+                                    <input type="checkbox" name="twogb" id="twogb" class="filter-checkbox">
+                                    <label for="twogb">2GB</label>
+                                </div>
+                                <div class="checkbox-container">
+                                    <input type="checkbox" name="fourgb" id="fourgb" class="filter-checkbox">
+                                    <label for="fourgb">4GB</label>
+                                </div>
+                                <div class="checkbox-container">
+                                    <input type="checkbox" name="sixgb" id="sixgb" class="filter-checkbox">
+                                    <label for="sixgb">6GB</label>
+                                </div>
+                                <div class="checkbox-container">
+                                    <input type="checkbox" name="eightgb" id="eightgb" class="filter-checkbox">
+                                    <label for="eightgb">8GB</label>
+                                </div>
+                            </fieldset>
+                            <div class="filter-buttons">
+                                <button type="button" class="more-filters">Show more options ...</button>
+                                <button type="submit" class="filter-submit">submit</button>
+                            </div>
+                        </form>
                     </aside>
                 </div>
                 <div class="col-9">
@@ -89,7 +151,7 @@
                         </select>
                     </div>
                     <div class="itemlist">
-                        <div class="item">
+                        <div class="item product-1">
                             <div class="itemimg">
                                 <img src="img/item-monoblock.png" alt="deviceimage">
                                 <div class="imgbuttons">
@@ -112,7 +174,8 @@
                                 <button class="tocart item-button" type="button">add to cart</button>
                             </div>
                         </div>
-                        <div class="item">
+
+                        <div class="item product-2">
                             <div class="itemimg">
                                 <img src="img/item-media-box.png" alt="deviceimage">
                                 <div class="imgbuttons">
@@ -135,7 +198,8 @@
                                 <button class="tocart item-button" type="button">add to cart</button>
                             </div>
                         </div>
-                        <div class="item">
+
+                        <div class="item product-3">
                             <div class="itemimg">
                                 <img src="img/item-watch.png" alt="deviceimage">
                                 <div class="imgbuttons">
@@ -158,9 +222,10 @@
                                 <button class="tocart item-button" type="button">add to cart</button>
                             </div>
                         </div>
-                        <div class="item">
+
+                        <div class="item product-4">
                             <div class="itemimg">
-                                <img src="img/item-monoblock.png" alt="deviceimage">
+                                <img src="img/item-laptop.png" alt="deviceimage">
                                 <div class="imgbuttons">
                                     <button type="button" class="img-button upscale"></button>
                                     <button type="button" class="img-button wishlist"></button>
@@ -181,9 +246,10 @@
                                 <button class="tocart item-button" type="button">add to cart</button>
                             </div>
                         </div>
-                        <div class="item">
+
+                        <div class="item product-5">
                             <div class="itemimg">
-                                <img src="img/item-monoblock.png" alt="deviceimage">
+                                <img src="img/icon-player.png" alt="deviceimage">
                                 <div class="imgbuttons">
                                     <button type="button" class="img-button upscale"></button>
                                     <button type="button" class="img-button wishlist"></button>
@@ -204,9 +270,10 @@
                                 <button class="tocart item-button" type="button">add to cart</button>
                             </div>
                         </div>
-                        <div class="item">
+
+                        <div class="item product-6">
                             <div class="itemimg">
-                                <img src="img/item-monoblock.png" alt="deviceimage">
+                                <img src="img/item-mobile.png" alt="deviceimage">
                                 <div class="imgbuttons">
                                     <button type="button" class="img-button upscale"></button>
                                     <button type="button" class="img-button wishlist"></button>
@@ -220,7 +287,7 @@
                                 <p class="description keys"><span class="features">ram:</span> 1 GB</p>
                             </div>
                             <div class="item-price">
-                                <p>$599<sup>25</sup></p>
+                                <p>$399<sup>50</sup></p>
                             </div>
                             <div class="item-buttons">
                                 <button class="details item-button" type="button">more details</button>
@@ -228,13 +295,20 @@
                             </div>
                         </div>
                     </div>
+                    <div class="hidden-products col-9">
+                        <button class="show-more">Show more ...</button>
+                    </div>
                 </div>
             </div>
-
         </div>
-
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <p>&copy Copyright 2017</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
